@@ -65,7 +65,7 @@ namespace EntityOrnek
                         {
                             item.NOID,
                             item.DERS,
-                            item.OGR,
+                            item.TBLOGRENCI.AD,
                             item.SINAV1,
                             item.SINAV2,
                             item.SINAV3,
