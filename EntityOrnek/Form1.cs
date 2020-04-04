@@ -129,5 +129,20 @@ namespace EntityOrnek
             dataGridView1.DataSource = degerler.ToList();
 
         }
+
+        private void buttonjoinilegetir_Click(object sender, EventArgs e)
+        {
+            var sorgu = from d1 in con.TBLNOTLARs
+                        join d2 in con.TBLOGRENCIs
+                        on d1.OGR equals d2.ID
+                        select new
+                        {
+                            Öğrenci = d2.AD,
+                            Sınav1 = d1.SINAV1,
+                            Sınav2 = d1.SINAV2
+                        };
+
+            dataGridView1.DataSource = sorgu.ToList();
+        }
     }
 }

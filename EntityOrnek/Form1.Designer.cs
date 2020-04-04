@@ -62,6 +62,7 @@
             this.NotListesi = new System.Windows.Forms.Button();
             this.BtnDersListesi = new System.Windows.Forms.Button();
             this.BtnProcedure = new System.Windows.Forms.Button();
+            this.buttonjoinilegetir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.TxtOgrenciId.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -384,11 +385,22 @@
             this.BtnProcedure.UseVisualStyleBackColor = true;
             this.BtnProcedure.Click += new System.EventHandler(this.BtnProcedure_Click);
             // 
+            // buttonjoinilegetir
+            // 
+            this.buttonjoinilegetir.Location = new System.Drawing.Point(545, 524);
+            this.buttonjoinilegetir.Name = "buttonjoinilegetir";
+            this.buttonjoinilegetir.Size = new System.Drawing.Size(108, 23);
+            this.buttonjoinilegetir.TabIndex = 22;
+            this.buttonjoinilegetir.Text = "Join İle Getir";
+            this.buttonjoinilegetir.UseVisualStyleBackColor = true;
+            this.buttonjoinilegetir.Click += new System.EventHandler(this.buttonjoinilegetir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 617);
+            this.Controls.Add(this.buttonjoinilegetir);
             this.Controls.Add(this.BtnProcedure);
             this.Controls.Add(this.BtnDersListesi);
             this.Controls.Add(this.NotListesi);
@@ -453,6 +465,7 @@
         private System.Windows.Forms.Button NotListesi;
         private System.Windows.Forms.Button BtnDersListesi;
         private System.Windows.Forms.Button BtnProcedure;
+        private System.Windows.Forms.Button buttonjoinilegetir;
     }
 }
 
